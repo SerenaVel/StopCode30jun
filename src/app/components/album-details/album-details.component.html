@@ -1,0 +1,16 @@
+<div class="row m-4">
+    <div class="col-md-4" *ngFor="let d of dettaglio">
+      <div class="card mb-4">
+        <a [href]="d.url" target="_blank">
+      <img [src]="d.thumbnailUrl" class="card-img-top" >
+      </a>
+      
+      
+      <div class="card-body">
+        <h5 class="card-title">{{ d.title }}</h5>
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>

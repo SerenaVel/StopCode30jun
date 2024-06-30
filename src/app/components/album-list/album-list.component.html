@@ -1,0 +1,12 @@
+
+<div class=" container mt-2">
+    <div class="list-group">
+    <a
+      class="list-group-item list-group-item-action list-group-item-dark"
+      *ngFor="let a of album"
+      [routerLink]="['/album', a.id]"
+    >
+      {{ a.title }}
+    </a>
+    </div>
+  </div>
